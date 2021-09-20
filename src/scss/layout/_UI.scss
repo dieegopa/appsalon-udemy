@@ -1,0 +1,45 @@
+html{
+    
+}
+
+
+body {
+    background-color: $negro;
+}
+
+
+.contenedor-estetica {
+   
+    
+    @include tablet {
+        height: 100vh;
+        @include grid(2, $separacion/2);
+    }
+    
+    .imagen{
+        
+        height: 30rem;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/1.jpg);
+        
+        @include tablet {
+            height: auto;
+        }
+    }
+}
+
+.app {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $separacion/2;
+    
+    .seccion {
+        margin-top: $separacion/2;
+        display: none;
+    }
+}
+
+.mostrar-seccion {
+    display: block!important;
+}
